@@ -2,118 +2,154 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> ikigega system</title>
-    <link rel="icon" type="icon/jpg"  href="{% static 'image/rice.jpg' %}" >
-    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <!-- UIkit CSS -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.7/dist/css/uikit.min.css" />
-
-<!-- UIkit JS -->
-<script src="https://cdn.jsdelivr.net/npm/uikit@3.5.7/dist/js/uikit.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/uikit@3.5.7/dist/js/uikit-icons.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>YIDHO</title>
+  <link rel="stylesheet" href="css/style">
+  <link rel="icon" type="icon/jpg"  href="{% static 'image/yidhologo.jpeg' %}">
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.11/dist/css/uikit.min.css" />
+  <script src="uikit/dist/js/uikit-icons.min.js"></script>
 </head>
-<body>
-    <div class=" container bg-pink-200 p-4">
-    <nav class="navbar  bg-gray-500">
-        <a class="navbar-brand w-1/6 text-black-300" href="#">S.Ikigega</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="flex gap-6 w-4/6" >
-          <ul style="list-style: none;" class="flex gap-4">
-            <li >
-              <a href="url 'home'" class="text-black-300">Home</a>
-            </li>
-            <li >
-              <a href="url 'about-us'" class="text-black-300">about us</a>
-            </li>
-
-          </ul>
-          <form class="form-inline px-20 ">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0 rounded-full" type="submit">Search</button>
-          </form>
-        </div>
-      </nav>
+<body style="background-image:radial-gradient(circle, rgb(142, 196, 231), rgb(139, 216, 203), rgb(237, 126, 252));" >
+ 
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+    <!-- Container wrapper -->
+    <div class="container-fluid">
+      <img src="{% static 'image/yidhologo.jpeg' %}" width="50px" height="30px">
+      <!-- Navbar brand -->
+      <a class="navbar-brand text-white px-4" href="#">YIDHO</a>
+  
+      <!-- Toggle button -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-mdb-toggle="collapse"
+        data-mdb-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+  
+      <!-- Collapsible wrapper -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- Left links -->
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active text-white" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">ABOUT US</a>
+          </li>
+          <!-- Navbar dropdown -->
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle text-white"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-mdb-toggle="dropdown"
+              aria-expanded="true"
+            >
+              MEMBERS
+            </a>
+            <!-- Dropdown menu -->
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider" /></li>
+              <li>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  text-white" href="#" tabindex="-1" aria-disabled="true"
+              >Become our partner</a
+            >
+          </li>
+        </ul>
+        <!-- Left links -->
+  
+        <!-- Donate form -->
+        
+          <button
+            class="btn btn-outline-primary"
+            type="button"
+            data-mdb-ripple-color="dark"
+          >
+            Donate
+          </button>
+        
+      </div>
+      <!-- Collapsible wrapper -->
+    </div>
+    <!-- Container wrapper -->
+  </nav>
+  <!-- Navbar -->
       <br>
       <br>
       <div class="flex">
         <div class="w-1/2">
-        <img src="{% static 'image/farmers all.jpg' %}" class="border-solid border-purple border-4 rounded-lg"
+        <img src="{% static 'image/yidhologo.jpeg' %}" class=" p-4 border-solid border-purple border-4 rounded-lg"
         data-aos="fade-down"
         data-aos-easing="linear">
-        <h2></h2>
-        <div class="dropdown">
-          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            categories
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="#">wheat</a>
-            <a class="dropdown-item" href="#">milk</a>
-            <a class="dropdown-item" href="#">rice</a>
-            <a class="dropdown-item" href="#">coffee</a>
-            <a class="dropdown-item" href="#">fruits</a>
-            <a class="dropdown-item" href="#">maize</a>
-          </div>
-        </div>
+        <h2 class="text-black text-2xl text-center px-4 font-bold"> our members</h2>
+         <p class="p-4">The organization is made of:
+          - Founding members
+          - Adherent members
+          - Honorary members
+            
+          1o Founding members are those who signed this constitution.
+          
+          2o Adherent members are any natural or legal persons who, 
+          after having subscribed to this constitution, will be approved 
+          by the general assembly. 
+          
+          3o Honorary members are any natural or legal persons who will 
+          be interested in the objectives of the organization and will
+           support its activities both materially and morally. 
+           Their membership is approved by the general assembly. 
+           They may participate in its meetings in an advisory capacity (not elective).
+           </p>
         </div>
         <div class="w-1/2">
-          <h1 class="text-black text-2xl px-4 font-bold">Smart ikigega short description</h1>
+          <h1 class="text-black text-2xl px-4 font-bold">Scope of activities</h1>
           <hr>
-            <p class="text-xl px-4 ">
+            <p class="text-xl px-4">
 
-               <span class="font-bold text-purple-500"> we help farmers to store their harvesting data</span> 
-               <span class="font-bold text-black-300">  in digital way as well as helping them to get direct 
-                loan on their phones</span> in three categories :
-                Firstly we help them to get their harvesting record directly on their phone
-                secondly our technology will help them to get direct loan on their phone
-               depending on their harvesting quantity
-               lastly we will help them to get their harvesting insurance.to help them to recover .
+               <span class="font-bold text-purple-500"></span> 
+               <span class="font-semibold text-black-300"> The organization conducts its 
+                 activities on the territory of the Republic of Rwanda especially in
+                  rural areas.
+                  It is established for an undetermined period.
             </p>
-         <div class="px-4"> <img src="{% static 'image/phone.jpg' %}"></div>
+         <div class="px-4"> <img src="{% static 'image/yidho2.jpg' %}" height="70px" class="mb-4"></div>
         </div>
       </div>
       <br>
-      <div class="row">
-          <div>
-            
-              <p class="text-sm">We are dedicated to help farmers to be 
-                  financially independent.through their harvesting record
-                  We are dedicated to help farmers to be 
-                  financially independent.through their harvesting record
-                  We are dedicated to help farmers to be 
-                  financially independent.through their harvesting record
-              </p>
-          </div>
-      </div>
       <br>
-          <div class="row px-4 bg-green-300">
+          <div class="row p-4 shadow-lg">
             <div class="w-3/6">
-            <h2 class="text-2xl font-bold">working system</h2>
-            <hr>
-          <p class="text-gray  text-xl">we are the interaction between 
-            farmers and their customers 
-            especiallyfarmers who works in 
-            the cooperatives as we helpingthem 
-            to get direct notification on their phones 
-            after bringing their harvesting
-          to the companies who buy from them .
-           not only interacting between farmers and their customers.
-           but also we will help them to get direct 
-           loan in time they want it through their phones depending 
-           on their harvesting quantity.</p>
+            <h2 class="text-2xl font-bold"> the company resources</h2>
+            <p class="text-xl">The resources of the organization are generated 
+              from the members ‘contributions, gifts, legacy different grants 
+              and other income generated activities of 
+              the organization in order to achieve its objectives.
+            </p>
+            <br/>
+            <h3 class="text-2xl font-bold">General  assembly</h3>
+          <p class="text-gray text-xl">The General Assembly is convened and headed 
+            by the President of executive Committee. In his/her absence
+             he/she shall temporarily be replaced by the Vice President. If both of them are absent or unwilling, the general Assembly shall be convened in written invitation signed by ½ of the effective members and designate 
+            a chairperson and reporter of the meeting.</p>
           </div>
           <div class="w-3/6 px-4">
-           <img src="{% static 'image/rice.jpg' %}" height="100px">
+           <img src="{% static 'image/yidho1.jpg' %}" height="100px">
           </div>
       </div>
      

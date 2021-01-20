@@ -15,80 +15,25 @@
   </head>
 <body style="background-image:radial-gradient(circle, rgb(142, 196, 231), rgb(139, 216, 203), rgb(237, 126, 252));" >
  
-<nav class="navbar navbar-expand-lg navbar-light bg-dark">
-  <!-- Container wrapper -->
-  <div class="container-fluid">
-    <img src="{% static 'image/yidhologo.jpeg' %}" width="50px" height="30px">
-    <!-- Navbar brand -->
-    <a class="navbar-brand text-white px-4" href="/">YIDHO</a>
-
-    <!-- Toggle button -->
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-mdb-toggle="collapse"
-      data-mdb-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <i class="fas fa-bars"></i>
+  <nav class="navbar navbar-expand-md navbar-light bg-blue-200">
+    <a href="/" class="navbar-brand">
+        <img src="{% static 'image/yidhologo.jpeg' %}" height="30px" width="30px" alt="YIDHO">
+    </a>
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
     </button>
 
-    <!-- Collapsible wrapper -->
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <!-- Left links -->
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active text-white" aria-current="page" href="/">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white" href="{% url 'about' %}">ABOUT US</a>
-        </li>
-        <!-- Navbar dropdown -->
-        <li class="nav-item dropdown">
-          <a
-            class="nav-link dropdown-toggle text-white"
-            href="#"
-            id="navbarDropdown"
-            role="button"
-            data-mdb-toggle="dropdown"
-            aria-expanded="true"
-          >
-            MEMBERS
-          </a>
-          <!-- Dropdown menu -->
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider" /></li>
-            <li>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link  text-white" href="#" tabindex="-1" aria-disabled="true"
-            >Become our partner</a
-          >
-        </li>
-      </ul>
-      <!-- Left links -->
-
-      <!-- Donate form -->
-      
-        <button
-          class="btn btn-outline-primary"
-          type="button"
-          data-mdb-ripple-color="dark"
-        >
-          Donate
-        </button>
-      
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav">
+            <a href="/" class="nav-item nav-link active"><button class="bg-purple-300 rounded-lg p-2 hover:bg-white">Home</button></a>
+            <a href="{% url 'about' %}" class="nav-item nav-link"><button class="bg-purple-300 rounded-lg p-2 hover:bg-white">About us</button></a>
+            <a href="#" class="nav-item nav-link"><button class="bg-purple-300 rounded-lg p-2 hover:bg-white">contact us</button></a>
+            <a href="#" class="nav-item nav-link " tabindex="-1"><button class="bg-purple-300 rounded-lg p-2 hover:bg-white">partners</button></a>
+        </div>
+        <div class="navbar-nav ml-auto bg-blue hover:bg-white">
+            <a href="#" class="nav-item nav-link  hover:text-blue"><button class="bg-purple-300 rounded-lg p-2 hover:bg-white">Donate</button></a>
+        </div>
     </div>
-    <!-- Collapsible wrapper -->
-  </div>
-  <!-- Container wrapper -->
 </nav>
 <!-- Navbar -->
   

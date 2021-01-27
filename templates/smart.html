@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>YIDHO</title>
+    <title>YiDHO</title>
     <link rel="stylesheet" href="css/style">
     <link rel="icon" type="icon/jpg"  href="{% static 'image/yidhologo.jpeg' %}">
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
@@ -17,7 +17,7 @@
  
   <nav class="navbar navbar-expand-md navbar-light bg-blue-200">
     <a href="/" class="navbar-brand">
-        <img src="{% static 'image/yidhologo.jpeg' %}" height="30px" width="30px" alt="YIDHO">
+        <img src="{% static 'image/yidhologo.jpeg' %}" height="70px" width="40px" alt="YIDHO">
     </a>
     <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
         <span class="navbar-toggler-icon"></span>
@@ -27,19 +27,20 @@
         <div class="navbar-nav">
             <a href="/" class="nav-item nav-link active"><button class="bg-purple-300 rounded-lg p-2 hover:bg-white">Home</button></a>
             <a href="{% url 'about' %}" class="nav-item nav-link"><button class="bg-purple-300 rounded-lg p-2 hover:bg-white">About us</button></a>
-            <a href="#" class="nav-item nav-link"><button class="bg-purple-300 rounded-lg p-2 hover:bg-white">contact us</button></a>
-            <a href="#" class="nav-item nav-link " tabindex="-1"><button class="bg-purple-300 rounded-lg p-2 hover:bg-white">partners</button></a>
+            <a href="{% url 'program' %}" class="nav-item nav-link"><button class="bg-purple-300 rounded-lg p-2 hover:bg-white">Programs</button></a>
+            <a href="#" class="nav-item nav-link " tabindex="-1"><button class="bg-purple-300 rounded-lg p-2 m:bg-white">partners</button></a>
         </div>
         <div class="navbar-nav ml-auto bg-blue hover:bg-white">
-            <a href="#" class="nav-item nav-link  hover:text-blue"><button class="bg-purple-300 rounded-lg p-2 hover:bg-white">Donate</button></a>
+          <a href="{% url 'donate' %}"class="nav-item nav-link"><button class="bg-purple-300 rounded-lg p-2 hover:bg-white">Donate</button></a>
+
         </div>
     </div>
 </nav>
 <!-- Navbar -->
   
-    <div class="flex flex-wrap p-4">
+    <div  class="flex flex-wrap p-4">
       <div class="w-full md:w-1/2 mb-4">
-        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow>
+        <!-- <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow>
 
           <ul class="uk-slideshow-items">
               <li>
@@ -56,10 +57,76 @@
           <a class="uk-slidenav-large uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
           <a class="uk-slidenav-large uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
       
+      </div> -->
+      <!--Carousel Wrapper-->
+      <!--Carousel Wrapper-->
+<div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel">
+  <!--Indicators-->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-2" data-slide-to="1"></li>
+    <li data-target="#carousel-example-2" data-slide-to="2"></li>
+  </ol>
+  <!--/.Indicators-->
+  <!--Slides-->
+  <div class="carousel-inner" role="listbox">
+    <div class="carousel-item active">
+      <div class="view">
+        <img class="d-block w-100" src="{% static 'image/yidhologo.jpeg' %}" 
+          alt="First slide">
+        <div class="mask rgba-black-light"></div>
       </div>
+      <div class="carousel-caption">
+        <h3 class="h3-responsive"></h3>
+        <p></p>
       </div>
-      <div class="w-full md:w-1/2 rounded-lg shadow-lg mb-4">
-       
+    </div>
+    <div class="carousel-item">
+      <!--Mask color-->
+      <div class="view">
+        <img class="d-block w-100" src="{% static 'image/yidho2.jpg' %}" 
+          alt="Second slide">
+        <div class="mask rgba-black-strong"></div>
+      </div>
+      <div class="carousel-caption">
+        <h3 class="h3-responsive">Youth empowerment</h3>
+        <p></p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <!--Mask color-->
+      <div class="view">
+        <img class="d-block w-100" src="{% static 'image/y2.jpg' %}" 
+          alt="Third slide">
+        <div class="mask rgba-black-slight"></div>
+      </div>
+      <div class="carousel-caption">
+        <h3 class="h3-responsive">youth empowerment</h3>
+        <p></p>
+      </div>
+    </div>
+  </div>
+  <!--/.Slides-->
+  <!--Controls-->
+  <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+  <!--/.Controls-->
+</div>
+<!--/.Carousel Wrapper--> 
+
+      
+      </div>
+      <div class="w-full md:w-1/2 rounded-lg shadow-lg mb-4"
+       data-aos="zoom-in-down"
+
+      > 
+<!--        -- 
         <h1  class="text-bold text-lg px-4">Our Mission</h1>
         <p class="p-4">‘Empowering youth to attain peaceful 
           and sustainable development through human rights awareness’.
@@ -67,13 +134,8 @@
         <h1  class="text-bold text-lg px-4">Our vision</h1>
         <p class="p-4">‘ We envision to have youth
           advocates of human rights and peaceful development’.
-        </p>
-      
-      </div>
-    </div>
-
-    <div class="container-fluid">
-     <h2 class="text-center text-bold text-lg">Why Yidho</h2>
+        </p> -->
+        <h2 class="text-center text-bold text-lg">Background</h2>
      <p class="text-semibold text-center">
       Youth Initiatives for Development and Human Rights Organization (YiDHO)
      </p>
@@ -84,25 +146,28 @@
         Sexual Reproductive Rights 
         to Rwandan young educates (iCARE) project. </p>
 
+      </div> 
     </div>
-    <div  class="container-fluid">
-     <h2 class="text-semibold text-center" >OUR SERVICES</h2>
+    <div  class="container-fluid"
+     data-aos="zoom-in-down"
+
+    >
      <div class="uk-child-width-1-2@s uk-grid-match" uk-grid>
       <div>
           <div class="uk-card uk-card-secondary uk-card-body">
-              <h3 class="uk-card-title">HIV/AIDS prevention</h3>
-              <p>implementing the Integrated Coaching on Human and Sexual
-                 Reproductive Rights to Rwandan young educates (iCARE) project.</p>
+              <h3 class="uk-card-title">Mission</h3>
+              <p>Empowering youth to attain peaceful and sustainable 
+                development through human rights awareness’ .</p>
           </div>
       </div>
       <div>
           <div class="uk-card uk-card-secondary uk-card-hover uk-card-body">
-              <h3 class="uk-card-title">Child rights and protection</h3>
-              <p>implementing the Integrated Coaching on Human and Sexual
-                 Reproductive Rights to Rwandan young educates (iCARE) project.</p>
+              <h3 class="uk-card-title">Vision</h3>
+              <p> We envision to have youth advocates of
+                 human rights and peaceful development.</p>
           </div>
       </div>
-      <div>
+      <!-- <div>
           <div class="uk-card uk-card-secondary uk-card-hover uk-card-body uk-light">
               <h3 class="uk-card-title">Human Rights promotion</h3>
               <p>Limplementing the Integrated Coaching on Human and Sexual
@@ -115,7 +180,7 @@
               <p>implementing the Integrated Coaching on Human and Sexual Reproductive 
                 Rights to Rwandan young educates (iCARE) project.</p>
           </div>
-      </div>
+      </div> -->
   </div>
     </div>
   
@@ -138,7 +203,7 @@
 
         <!-- Content -->
         <h5 class="text-uppercase">Location</h5>
-        <p>Kimisagara,Nyarugenge,Kigali.</p>
+        <p>Kigali city-Gasabo-Remera.</p>
 
       </div>
       <!-- Grid column -->

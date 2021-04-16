@@ -13,7 +13,21 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.11/dist/css/uikit.min.css" />
     <script src="uikit/dist/js/uikit-icons.min.js"></script>
   </head>
-<body style="background-image:radial-gradient(circle, rgb(142, 196, 231), rgb(139, 216, 203), rgb(237, 126, 252));" >
+  <style>
+
+    body {
+      background-image: url("{% static 'image/myimg.jpg' %}" );
+      opacity: 0.8;
+      background-repeat: no-repeat;
+      background-size: cover;  
+    }
+    
+    .topnav .icon {
+      display: none;
+    }
+    
+    </style>
+<body >
  
   <nav class="navbar navbar-expand-md navbar-light bg-blue-200">
     <a href="/" class="navbar-brand">
@@ -84,24 +98,24 @@
     <div class="carousel-item">
       <!--Mask color-->
       <div class="view">
-        <img class="d-block w-100" src="{% static 'image/yidho2.jpg' %}" 
+        <img class="d-block w-100" src="{% static 'image/y21.PNG' %}" 
           alt="Second slide">
         <div class="mask rgba-black-strong"></div>
       </div>
       <div class="carousel-caption">
-        <h3 class="h3-responsive">Youth empowerment</h3>
+        <h3 class="h3-responsive text-bold text-black">Youth empowerment</h3>
         <p></p>
       </div>
     </div>
     <div class="carousel-item">
       <!--Mask color-->
       <div class="view">
-        <img class="d-block w-100" src="{% static 'image/y2.jpg' %}" 
+        <img class="d-block w-100" src="{% static 'image/y31.PNG' %}" 
           alt="Third slide">
         <div class="mask rgba-black-slight"></div>
       </div>
       <div class="carousel-caption">
-        <h3 class="h3-responsive">youth empowerment</h3>
+        <h3 class="h3-responsive text-bold text-black">youth empowerment</h3>
         <p></p>
       </div>
     </div>
@@ -122,7 +136,7 @@
 
       
       </div>
-      <div class="w-full md:w-1/2 rounded-lg shadow-lg mb-4"
+      <div class="w-full md:w-1/2 rounded-lg shadow-lg mb-4 bg-gray-300"
        data-aos="zoom-in-down"
 
       > 
@@ -135,7 +149,7 @@
         <p class="p-4">‘ We envision to have youth
           advocates of human rights and peaceful development’.
         </p> -->
-        <h2 class="text-center text-bold text-lg">Background</h2>
+        <h2 class="text-center text-bold text-lg ">Background</h2>
      <p class="text-semibold text-center">
       Youth Initiatives for Development and Human Rights Organization (YiDHO)
      </p>
@@ -185,7 +199,7 @@
     </div>
   
 <!-- Footer -->
-<div class="p-4">
+<div class="p-4 bg-gray-300">
   <div class="container my-4">
 
    

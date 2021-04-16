@@ -14,7 +14,7 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="uikit/dist/js/uikit-icons.min.js"></script>
 </head>
-<body style="background-image:radial-gradient(circle, rgb(142, 196, 231), rgb(139, 216, 203), rgb(237, 126, 252));" >
+<body >
   <nav class="navbar navbar-expand-md navbar-light bg-blue-200">
     <a href="/" class="navbar-brand">
         <img src="{% static 'image/yidhologo.jpeg' %}" height="70px" width="40px" alt="YIDHO">
@@ -63,9 +63,9 @@
       <div class="col-md-12 mb-4">
 
         <!-- Card -->
-        <div class="card card-image" style="background-image: url(https://mdbootstrap.com/img/Photos/Others/img%20%2832%29.jpg);">
-          <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4 px-md-5 rounded">
-            <div>
+        <div class="card card-image">
+          <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4 px-md-5 rounded bg-indigo-200">
+            <div class="">
               <h6 class="purple-text">
                 <i class="fas fa-plane"></i>
                 <strong> YiDHO</strong>
@@ -74,19 +74,20 @@
                 <strong>our members</strong>
                 
               </h3>
-              <p class="pb-3">
-          The organization is made of:
+              <p class="pb-3 text-black ">
+                The organization is made of:
+         <strong>
           - Founding members
           - Adherent members
-          - Honorary members
-            
-          Founding members are those who signed this constitution.
+          - Honorary members</strong> 
+            <br/>
+          <strong>Founding members</strong> are those who signed this constitution.
           
-           Adherent members are any natural or legal persons who, 
+           <strong> Adherent members</strong> are any natural or legal persons who, 
           after having subscribed to this constitution, will be approved 
           by the general assembly. 
           
-           Honorary members are any natural or legal persons who will 
+          <strong> Honorary members</strong> are any natural or legal persons who will 
           be interested in the objectives of the organization and will
            support its activities both materially and morally. 
            Their membership is approved by the general assembly. 
@@ -115,8 +116,8 @@
 <div>
   <h3 class="font-weight-bold pb-2 mb-4 text-center">Our amazing team</h3>
 </div>
-<div class="container my-5"
-data-aos="zoom-out-up">
+<div class="container my-5 bg-gray-300"
+data-aos="zoom-out-up" >
 
 
   <!--Section: Content-->
@@ -135,7 +136,7 @@ data-aos="zoom-out-up">
       <!-- Grid column -->
       <div class="col-lg-3 col-md-6 mb-4">
         <div class="avatar mx-auto">
-          <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(20).jpg" class="rounded-circle z-depth-1"
+          <img src="{% static 'image/AYEBARE.jpg' %}" class="rounded-circle z-depth-1"
             alt="Sample avatar">
         </div>
         <h5 class="font-weight-bold mt-4 mb-3">Benon AYEBALE</h5>
@@ -160,7 +161,7 @@ data-aos="zoom-out-up">
       <!-- Grid column -->
       <div class="col-lg-3 col-md-6 mb-4">
         <div class="avatar mx-auto">
-          <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(3).jpg" class="rounded-circle z-depth-1"
+          <img src="{% static 'image/Ange.jpg' %}" class="rounded-circle z-depth-1"
             alt="Sample avatar">
         </div>
         <h5 class="font-weight-bold mt-4 mb-3">Ange Marie Sandrine UMUTAHIZA</h5>
@@ -181,7 +182,7 @@ data-aos="zoom-out-up">
       <!-- Grid column -->
       <div class="col-lg-3 col-md-6 mb-4">
         <div class="avatar mx-auto">
-          <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(30).jpg" class="rounded-circle z-depth-1"
+          <img src="{% static 'image/Ezechias.jpg' %}" class="rounded-circle z-depth-1"
             alt="Sample avatar">
         </div>
         <h5 class="font-weight-bold mt-4 mb-3">Ezechias ABIMANA</h5>
@@ -206,7 +207,7 @@ data-aos="zoom-out-up">
       <!-- Grid column -->
       <div class="col-lg-3 col-md-6 mb-4">
         <div class="avatar mx-auto">
-          <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(32).jpg" class="rounded-circle z-depth-1"
+          <img src="{% static 'image/Josiane.jpg' %}" class="rounded-circle z-depth-1"
             alt="Sample avatar">
         </div>
         <h5 class="font-weight-bold mt-4 mb-3">Josiane ININAHAZWE</h5>
@@ -234,7 +235,7 @@ data-aos="zoom-out-up">
 
 <!-- second team -->
 
-<div class="container py-5 my-5">
+<div class="container py-5 my-5 bg-gray-300" data-aos="zoom-out-up" >
   <section class="p-md-3 mx-md-5 text-center text-lg-left">
     <h2 class="text-center font-weight-bold mb-4 pb-1">2.	Conflict Resolution Committee </h2>
     <p class="text-center lead mb-5 pb-2 text-muted">The organ for conflicts resolution shall settle any conflict within 
@@ -246,7 +247,7 @@ data-aos="zoom-out-up">
             class="avatar w-100 white d-flex justify-content-center align-items-center"
           >
             <img
-              src="https://mdbootstrap.com/img/Photos/Avatars/img%20(15).jpg"
+              src="{% static 'image/Fidele.JPG' %}"
               class="img-fluid"
             />
           </div>
@@ -262,7 +263,7 @@ data-aos="zoom-out-up">
             class="avatar w-100 white d-flex justify-content-center align-items-center"
           >
             <img
-              src="https://mdbootstrap.com/img/Photos/Avatars/img%20(22).jpg"
+              src="{% static 'image/MAYERI.jpg' %}"
               class="img-fluid"
             />
           </div>
@@ -278,7 +279,7 @@ data-aos="zoom-out-up">
             class="avatar w-100 white d-flex justify-content-center align-items-center"
           >
             <img
-              src="https://mdbootstrap.com/img/Photos/Avatars/img%20(29).jpg"
+              src="{% static 'image/Allen.jpg' %}"
               class="img-fluid"
             />
           </div>
@@ -294,8 +295,8 @@ data-aos="zoom-out-up">
 
 <!--third team-->
 
-<div class="container py-5 my-5">
-  <section class="p-md-3 mx-md-5 text-center text-lg-left">
+<div class="container py-5 my-5 bg-gray-300" data-aos="zoom-out-up">
+  <section class="p-md-3 mx-md-5 text-center text-lg-left" >
     <h2 class="text-center font-weight-bold mb-4 pb-1">3.	Audit committee<h2>
     <p class="text-center lead mb-5 pb-2 text-muted">
       The General Assembly annually elects one or two internal auditors. 
@@ -310,7 +311,7 @@ data-aos="zoom-out-up">
             class="avatar w-100 white d-flex justify-content-center align-items-center"
           >
             <img
-              src="https://mdbootstrap.com/img/Photos/Avatars/img%20(15).jpg"
+              src="{% static 'image/TUYISHIME.jpg' %}"
               class="img-fluid"
             />
           </div>
@@ -318,6 +319,7 @@ data-aos="zoom-out-up">
             <p class="font-weight-bold my-2">Jean D’Amour TUYISHIME</p>
             <p class="text-muted">President</p>
           </div>
+          <br/>
         </div>
       </div>
       <div class="col-lg-4 mb-4">
@@ -326,7 +328,7 @@ data-aos="zoom-out-up">
             class="avatar w-100 white d-flex justify-content-center align-items-center"
           >
             <img
-              src="https://mdbootstrap.com/img/Photos/Avatars/img%20(22).jpg"
+              src="{% static 'image/Innocent.jpg' %}"
               class="img-fluid"
             />
           </div>
@@ -334,6 +336,9 @@ data-aos="zoom-out-up">
             <p class="font-weight-bold my-2">Innocent NTAMBARA</p>
             <p class="text-muted">Vice president</p>
           </div>
+          <br/>
+          <br/>
+          <br/>
         </div>
       </div>
       <div class="col-lg-4 mb-4">
@@ -342,7 +347,7 @@ data-aos="zoom-out-up">
             class="avatar w-100 white d-flex justify-content-center align-items-center"
           >
             <img
-              src="https://mdbootstrap.com/img/Photos/Avatars/img%20(29).jpg"
+              src="{% static 'image/Athanase.jpg' %}"
               class="img-fluid"
             />
           </div>
@@ -358,7 +363,7 @@ data-aos="zoom-out-up">
 
 
 
-<div class="container my-5 py-5 z-depth-1">
+<div class="container my-5 py-5 z-depth-1" data-aos="zoom-out-down">
  
  
   <!--Section: Content-->
@@ -386,7 +391,7 @@ data-aos="zoom-out-up">
 
         <!--Image-->
         <div class="view overlay z-depth-1-half">
-          <img src="{% static 'image/y2.jpg'  %}" class="img-fluid"
+          <img src="{% static 'image/y21.PNG'  %}" class="img-fluid"
             alt="">
           <a href="#">
             <div class="mask rgba-white-light"></div>
@@ -406,8 +411,8 @@ data-aos="zoom-out-up">
 
 </div>
       
-    <div class="p-4">
-      <div class="container my-4">
+    <div class="p-4 bg-gray-300">
+      <div class="container my-4 ">
     
        
         <!-- Footer -->
